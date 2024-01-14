@@ -1,0 +1,58 @@
+services:
+    mongodb:
+        container_name: lavamusic-mongodb
+        # higher versions don't work on Apple Silicon
+        image: 'bitnami/mongodb:4.4'
+        environment:
+            MONGODB_ADVERTISED_HOSTNAME: 127.0.0.1
+            MONGODB_REPLICA_SET_MODE: primary
+            MONGODB_ROOT_USER: mongoadmin
+            MONGODB_ROOT_PASSWORD: mongopassword
+            MONGODB_REPLICA_SET_KEY: replicasetkey123
+        restart: on-failure
+        volumes:
+            - mongodb_data:/data/db
+    lavalink:
+        container_name: lavamusic-lavalink
+        image: ghcr.io/lavalink-devs/lavalink
+        restart: on-failure
+        environment:
+            SERVER_PORT: 2333
+            
+        volumes:
+            # mount application.yml from the same directory or use environment variables
+            - ./Lavalink/application.yml:/opt/Lavalink/application.yml
+            # persist plugins between restarts, make sure to set the correct permissions (user: 322, group: 322)
+            - ./Lavalink/plugins/:/opt/Lavalink/plugins/
+        #expose:
+        # lavalink exposes port 2333 to connect to for other containers (this is for documentation purposes only)
+        #- 2333
+        #ports:
+            # you only need this if you want to make your lavalink accessible from outside of containers
+            #- "2333:2333"
+
+    lavamusic:
+        container_name: lavamusic
+        image: ghcr.io/brblacky/lavamusic:main
+        environment:
+            - DATABASE_URL=mongodb://mongoadmin:mongopassword@mongodb/lavamusic?authSource=admin&directConnection=true
+            # Your mongodb url
+            - LAVALINK_URL=lavalink:2333
+            # Your lavalink url
+            - LAVALINK_AUTH=youshallnotpass
+            # Your lavalink password
+            - LAVALINK_NAME=Blacky'
+            # Your lavalink name
+            - LAVALINK_SECURE=false
+            # true if you are using https
+        volumes:
+            # mount .env from the same directory or use environment variables
+            - .env:/opt/lavamusic/.env
+
+        command: bash -c "apt-get update -y && apt-get install -y openssl && npx prisma generate && node dist/index.js"
+        restart: on-failure
+        depends_on:
+            - lavalink
+            - mongodb
+volumes:
+    mongodb_data:

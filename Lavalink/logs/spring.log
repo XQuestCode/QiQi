@@ -1,0 +1,68 @@
+2024-01-15T02:00:12.448+11:00  INFO 5672 --- [main] lavalink.server.Launcher                 : Starting Launcher v4.0.0 using Java 21.0.1 with PID 5672 (F:\Github\lavamusic\Lavalink\Lavalink.jar started by 99341 in F:\Github\lavamusic\Lavalink)
+2024-01-15T02:00:12.459+11:00  INFO 5672 --- [main] lavalink.server.Launcher                 : No active profile set, falling back to 1 default profile: "default"
+2024-01-15T02:00:14.184+11:00  INFO 5672 --- [main] l.server.bootstrap.PluginManager         : Downloading https://maven.lavalink.dev/releases/com/github/topi314/lavasrc/lavasrc-plugin/4.0.1/lavasrc-plugin-4.0.1.jar
+2024-01-15T02:00:19.359+11:00  INFO 5672 --- [main] l.server.bootstrap.PluginManager         : Found plugin 'lavasrc-plugin' version 4.0.1
+2024-01-15T02:00:19.594+11:00  INFO 5672 --- [main] l.server.bootstrap.PluginManager         : Loaded lavasrc-plugin-4.0.1.jar (123 classes)
+2024-01-15T02:00:19.941+11:00  INFO 5672 --- [main] lavalink.server.Launcher                 : Started Launcher in 8.412 seconds (process running for 9.985)
+2024-01-15T02:00:19.945+11:00  INFO 5672 --- [main] lavalink.server.Launcher                 : You can safely ignore the big red warning about illegal reflection. See https://github.com/lavalink-devs/Lavalink/issues/295
+2024-01-15T02:00:20.062+11:00  INFO 5672 --- [main] lavalink.server.Launcher                 : 
+
+[32m       .  [31m _                  _ _       _    [32m__ _ _
+[32m      /\\ [31m| | __ ___   ____ _| (_)_ __ | | __[32m\ \ \ \
+[32m     ( ( )[31m| |/ _` \ \ / / _` | | | '_ \| |/ /[32m \ \ \ \
+[32m      \\/ [31m| | (_| |\ V / (_| | | | | | |   < [32m  ) ) ) )
+[32m       '  [31m|_|\__,_| \_/ \__,_|_|_|_| |_|_|\_\[32m / / / /
+[0m    =========================================[32m/_/_/_/[0m
+
+	Version:        4.0.0
+	Build time:     03.12.2023 14:46:34 UTC
+	Branch          HEAD
+	Commit:         acc6069
+	Commit time:    03.12.2023 14:45:17 UTC
+	JVM:            21.0.1
+	Lavaplayer      2.0.4
+
+2024-01-15T02:00:20.080+11:00  INFO 5672 --- [main] lavalink.server.Launcher                 : No active profile set, falling back to 1 default profile: "default"
+2024-01-15T02:00:21.405+11:00  WARN 5672 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2024-01-15T02:00:21.449+11:00  INFO 5672 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2024-01-15T02:00:21.449+11:00  INFO 5672 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1360 ms
+2024-01-15T02:00:21.601+11:00  INFO 5672 --- [main] c.g.t.lavasrc.plugin.LavaSrcPlugin       : Loading LavaSrc plugin...
+2024-01-15T02:00:21.755+11:00  INFO 5672 --- [main] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring enabled, reporting results every 2 minutes.
+2024-01-15T02:00:21.824+11:00  INFO 5672 --- [main] c.g.t.lavasrc.plugin.LavaSrcPlugin       : Registering Spotify audio source manager...
+2024-01-15T02:00:22.232+11:00  INFO 5672 --- [main] l.server.config.KoeConfiguration         : OS: WINDOWS, Arch: X86_64
+2024-01-15T02:00:22.233+11:00  INFO 5672 --- [main] l.server.config.KoeConfiguration         : Enabling JDA-NAS
+2024-01-15T02:00:22.236+11:00  INFO 5672 --- [main] c.s.l.c.natives.NativeLibraryLoader      : Native library udpqueue: loading with filter null
+2024-01-15T02:00:22.844+11:00  INFO 5672 --- [main] c.s.l.c.natives.NativeLibraryLoader      : Native library udpqueue: successfully loaded.
+2024-01-15T02:00:22.901+11:00  WARN 5672 --- [main] l.server.config.SentryConfiguration      : Turning off sentry
+2024-01-15T02:00:23.375+11:00  INFO 5672 --- [main] io.undertow                              : starting server: Undertow - 2.3.6.Final
+2024-01-15T02:00:23.392+11:00  INFO 5672 --- [main] org.xnio                                 : XNIO version 3.8.8.Final
+2024-01-15T02:00:23.414+11:00  INFO 5672 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.8.8.Final
+2024-01-15T02:00:23.582+11:00  INFO 5672 --- [main] org.jboss.threads                        : JBoss Threads version 3.5.0.Final
+2024-01-15T02:00:23.734+11:00  INFO 5672 --- [main] o.s.b.w.e.undertow.UndertowWebServer     : Undertow started on port(s) 2333 (http)
+2024-01-15T02:00:23.743+11:00  INFO 5672 --- [main] lavalink.server.Launcher                 : Started Launcher in 3.79 seconds (process running for 13.786)
+2024-01-15T02:00:23.744+11:00  INFO 5672 --- [main] lavalink.server.Launcher                 : Lavalink is ready to accept connections.
+2024-01-15T02:03:04.308+11:00  INFO 5672 --- [XNIO-1 task-2] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-15T02:03:04.309+11:00  INFO 5672 --- [XNIO-1 task-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-01-15T02:03:04.311+11:00  INFO 5672 --- [XNIO-1 task-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-01-15T02:03:04.351+11:00  INFO 5672 --- [XNIO-1 task-2] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /[0:0:0:0:0:0:0:1]:65205
+2024-01-15T02:03:04.382+11:00  INFO 5672 --- [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : GET /v4/websocket, client=0:0:0:0:0:0:0:1
+2024-01-15T02:03:04.484+11:00  INFO 5672 --- [XNIO-1 task-2] lavalink.server.io.SocketServer          : Connection successfully established from Lavamusic (@devblacky)
+2024-01-15T02:03:24.600+11:00  INFO 5672 --- [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/7fim3lny0eys3l0j/players/1060176698341077042?noReplace=false, client=0:0:0:0:0:0:0:1, payload={"voice":{"token":"300676cdb06c59d1","endpoint":"india4152.discord.media:443","sessionId":"a52f6ca1c885d9d8e6943a0b9a2b97ea"}}
+2024-01-15T02:03:24.648+11:00  INFO 5672 --- [XNIO-1 task-2] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytsearch:wasted jwrld"
+2024-01-15T02:03:25.710+11:00  INFO 5672 --- [XNIO-1 task-2] lavalink.server.player.AudioLoader       : Loaded playlist Search results for: wasted jwrld
+2024-01-15T02:03:25.746+11:00  INFO 5672 --- [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : GET /v4/loadtracks?identifier=ytsearch%3Awasted+jwrld, client=0:0:0:0:0:0:0:1
+2024-01-15T02:03:25.773+11:00  INFO 5672 --- [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/7fim3lny0eys3l0j/players/1060176698341077042?noReplace=false, client=0:0:0:0:0:0:0:1, payload={"encodedTrack":"QAABLQMAKkp1aWNlIFdSTEQg4oCTIFdhc3RlZCAoZmVhdC4gTGlsIFV6aSBWZXJ0KQAKSnVpY2UgV1JMRAAAAAAAA+voAAtwcWlPOHdWNC13YwABACtodHRwczovL3d3dy55b3V0dWJlLmNvbS93YXRjaD92PXBxaU84d1Y0LXdjAQCbaHR0cHM6Ly9pLnl0aW1nLmNvbS92aS9wcWlPOHdWNC13Yy9tYXhyZXNkZWZhdWx0LmpwZz9zcXA9LW9heW13RW1DSUFLRU5BRjhxdUtxUU1hOEFFQi1BSC1DWUFDMEFXS0Fnd0lBQkFCR0dVZ1lDaFpNQTg9JnJzPUFPbjRDTERydnhZOUl0Q3M5c3lkZVJuRmtOaVM4LTJPZncAAAd5b3V0dWJlAAAAAAAAAAA="}
+2024-01-15T02:03:25.775+11:00  WARN 5672 --- [lava-daemon-pool-playback-1-thread-1] c.s.d.l.s.y.YoutubeAccessTokenTracker    : YouTube auth tokens can't be retrieved because email and password is not set in YoutubeAudioSourceManager, age restricted videos will throw exceptions.
+2024-01-15T02:03:26.371+11:00  INFO 5672 --- [lava-daemon-pool-playback-1-thread-1] c.s.d.l.s.y.YoutubeAccessTokenTracker    : Updating YouTube visitor id (current is null).
+2024-01-15T02:03:26.595+11:00  INFO 5672 --- [lava-daemon-pool-playback-1-thread-1] c.s.d.l.s.y.YoutubeAccessTokenTracker    : Updating YouTube visitor id succeeded, new one is Cgt4TExwUGtrNnIxOCi-74-tBjIKCgJBVRIEGgAgVToKIPTc2Ifj9_3RZQ%3D%3D, next update will be after 600 seconds.
+2024-01-15T02:03:35.257+11:00  INFO 5672 --- [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/7fim3lny0eys3l0j/players/1060176698341077042?noReplace=false, client=0:0:0:0:0:0:0:1, payload={"encodedTrack":null}
+2024-01-15T02:03:45.237+11:00  INFO 5672 --- [XNIO-1 task-2] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytsearch:wasted jwrld"
+2024-01-15T02:03:45.636+11:00  INFO 5672 --- [XNIO-1 task-2] lavalink.server.player.AudioLoader       : Loaded playlist Search results for: wasted jwrld
+2024-01-15T02:03:45.640+11:00  INFO 5672 --- [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : GET /v4/loadtracks?identifier=ytsearch%3Awasted+jwrld, client=0:0:0:0:0:0:0:1
+2024-01-15T02:03:45.651+11:00  INFO 5672 --- [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/7fim3lny0eys3l0j/players/1060176698341077042?noReplace=false, client=0:0:0:0:0:0:0:1, payload={"encodedTrack":"QAABLQMAKkp1aWNlIFdSTEQg4oCTIFdhc3RlZCAoZmVhdC4gTGlsIFV6aSBWZXJ0KQAKSnVpY2UgV1JMRAAAAAAAA+voAAtwcWlPOHdWNC13YwABACtodHRwczovL3d3dy55b3V0dWJlLmNvbS93YXRjaD92PXBxaU84d1Y0LXdjAQCbaHR0cHM6Ly9pLnl0aW1nLmNvbS92aS9wcWlPOHdWNC13Yy9tYXhyZXNkZWZhdWx0LmpwZz9zcXA9LW9heW13RW1DSUFLRU5BRjhxdUtxUU1hOEFFQi1BSC1DWUFDMEFXS0Fnd0lBQkFCR0dVZ1lDaFpNQTg9JnJzPUFPbjRDTERydnhZOUl0Q3M5c3lkZVJuRmtOaVM4LTJPZncAAAd5b3V0dWJlAAAAAAAAAAA="}
+2024-01-15T02:06:45.420+11:00  INFO 5672 --- [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : DELETE /v4/sessions/7fim3lny0eys3l0j/players/1060176698341077042, client=0:0:0:0:0:0:0:1
+2024-01-15T02:17:55.231+11:00  INFO 5672 --- [XNIO-1 I/O-16] lavalink.server.io.SocketServer          : Connection closed from /[0:0:0:0:0:0:0:1]:65205 with id 7fim3lny0eys3l0j -- CloseStatus[code=1006, reason=]
+2024-01-15T02:17:55.232+11:00  INFO 5672 --- [XNIO-1 I/O-16] lavalink.server.io.SocketContext         : Shutting down 0 playing players.
+2024-01-15T02:18:06.255+11:00  INFO 5672 --- [XNIO-1 task-2] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /[0:0:0:0:0:0:0:1]:51301
+2024-01-15T02:18:06.260+11:00  INFO 5672 --- [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : GET /v4/websocket, client=0:0:0:0:0:0:0:1
+2024-01-15T02:18:06.263+11:00  INFO 5672 --- [XNIO-1 task-2] lavalink.server.io.SocketServer          : Connection successfully established from Lavamusic (@devblacky)
