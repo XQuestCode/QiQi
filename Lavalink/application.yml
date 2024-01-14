@@ -12,7 +12,7 @@ plugins:
       yandexmusic: false # Enable Yandex Music source
     spotify:
       clientId: "85a0c8c92a0647bfa964768a30b7c579" # your spotify client id
-      clientSecret: "aeef4cd59d5a4e84895c4968188b518c" # your spotify client secret
+      clientSecret: "" # your spotify client secret
       countryCode: "US" # the country code you want to use for filtering the artists top tracks. See https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
       playlistLoadLimit: 6 # The number of pages at 100 tracks each
       albumLoadLimit: 6 # The number of pages at 50 tracks each
